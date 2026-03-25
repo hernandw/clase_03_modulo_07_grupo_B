@@ -1,0 +1,31 @@
+{
+  "name": "clase_03_grupo_b",
+  "version": "1.0.0",
+  "description": "Breve descripción del proyecto y su objetivo.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --env-file=.env ./src/index.js",
+    "start": "node ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hernandw/clase_03_modulo_07_grupo_B.git"
+  },
+  "keywords": [],
+  "author": "Williams Hernández",
+  "license": "MIT",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/hernandw/clase_03_modulo_07_grupo_B/issues"
+  },
+  "homepage": "https://github.com/hernandw/clase_03_modulo_07_grupo_B#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "express-handlebars": "^8.0.6",
+    "pg": "^8.20.0"
+  },
+  "devDependencies": {
+    "dotenv": "^17.3.1",
+    "nodemon": "^3.1.14"
+  }
+}
