@@ -1,0 +1,18 @@
+<h1>Productos activos</h1>
+
+{{#if productos.length}}
+  <ul>
+    {{#each productos}}
+      <li>
+        {{this.nombre}} - ${{this.precio}}
+        <form action="/productos/vender/{{this.id}}" method="POST" style="display:inline;">
+          <button type="submit">Vender</button>
+        </form>
+      </li>
+    {{/each}}
+  </ul>
+{{else}}
+  <p>No hay productos activos.</p>
+{{/if}}
+
+<a href="/">Volver al inicio</a>

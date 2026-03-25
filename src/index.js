@@ -1,6 +1,7 @@
 import express from 'express'
 import path from 'path'
 import exphbs from 'express-handlebars'
+import productosRouter from './routes/productosRoutes.js'
 
 const app = express()
 const __dirname = path.resolve()
@@ -28,7 +29,7 @@ app.engine("hbs", exphbs.engine({
 
 
 //rutas
-
+app.use('/', productosRouter)
 
 app.listen(PORT, ()=>{
     console.log(`Server runnig on port http://localhost:${PORT}`)
